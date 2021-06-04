@@ -14,7 +14,7 @@ export class CatService {
     }
 
     allCat():string{
-        if(this.cats.length){
+        if(!this.cats.length){
             return "현재 고양이가 없습니다."
         }else{
             let str : string = "";
