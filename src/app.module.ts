@@ -8,9 +8,10 @@ import { CatModule } from './cat/cat.module';
 import { LoggerMiddleware } from './common/middleware/logger.middleware';
 import { UserModule } from './api/user/user.module';
 import { AuthModule } from './auth/auth.module';
+import { UsersModule } from './users/users.module';
 
 @Module({
-  imports: [CatModule, UserModule, AuthModule],
+  imports: [CatModule, UserModule, AuthModule, UsersModule],
   // controllers: [AppController],
   // providers: [AppService],
 })
