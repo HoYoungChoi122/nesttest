@@ -1,7 +1,14 @@
+import { IsString,  IsNumber } from 'class-validator';
+
 export class Cat{
 
+    @IsString()
     private _name : string;
+
+    @IsNumber()
     private _age : number;
+
+    @IsString()
     private _breed : string;
 
     constructor(name: string, age: number, breed: string) {
@@ -9,6 +16,7 @@ export class Cat{
         this._age = age;
         this._breed = breed;
     }
+
 
     get name(): string {
         return this._name;
@@ -25,6 +33,7 @@ export class Cat{
     set age(value: number) {
         this._age = value;
     }
+
 
     get breed(): string {
         return this._breed;
